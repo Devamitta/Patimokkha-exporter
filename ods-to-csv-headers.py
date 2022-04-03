@@ -107,7 +107,7 @@ with ZipFile(ods_file_name) as ods_file:
             print('Sorry, could not find sheet named "{}".'.format(sheet_name))
             exit()
 
-        rows = table.getElementsByTagName('table:table-row')[1:]
+        rows = table.getElementsByTagName('table:table-row')[0:]
 
         print('\nTotal rows to process: {}'.format(len(rows)))
 
