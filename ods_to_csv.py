@@ -6,8 +6,8 @@ def convert_dps_ods_to_csv():
     df_convert_dps = read_ods("Pātimokkha Word by Word.ods")
     df_convert_dps.fillna("", inplace=True)
     df_convert_dps = df_convert_dps.astype(str)
-    df_convert_dps.rename(columns=df_convert_dps.iloc[0], inplace = True)
-    df_convert_dps.drop([0], inplace = True)
+    # df_convert_dps.rename(columns=df_convert_dps.iloc[0], inplace = True)
+    # df_convert_dps.drop([0], inplace = True)
 
     df_convert_dps.to_csv("Pātimokkha for Analisis.csv", sep="\t", index=None)
 
