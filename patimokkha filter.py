@@ -23,4 +23,4 @@ df = df[['bhikkhupātimokkhapāḷi', 'pos', 'grammar', '+case', 'tamil',
 df.insert(18, 'feedback', None)        
 
 # save csv
-df.to_csv("Pātimokkha Word by Word.csv", sep="\t", index=None)
+df.to_csv("Pātimokkha for Anki.csv", sep="\t", index=None)
