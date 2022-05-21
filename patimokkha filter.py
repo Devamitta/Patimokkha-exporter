@@ -20,7 +20,7 @@ df = df[['bhikkhupātimokkhapāḷi', 'pos', 'grammar', '+case', 'tamil',
         'meaning', 'lit. meaning', 'root', 'rt gp', 'sign', 'base', 
         'construction', 'compound type', 'compound construction', 'abbrev', 
         'source', 'sentence', 'aṭṭhakathā']]
-df.insert(18, 'feedback', None)        
+df.insert(18, 'feedback', "<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdG6zKDtlwibtrX-cbKVn4WmIs8miH4VnuJvb7f94plCDKJyA/viewform?usp=pp_url&entry.438735500="+df['bhikkhupātimokkhapāḷi']+"\">feedback</a>")    
 
 # save csv
 df.to_csv("Pātimokkha for Anki.csv", sep="\t", index=None)
